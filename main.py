@@ -37,12 +37,13 @@ async def connect_nodes():
     await bot.wait_until_ready()
     await wavelink.NodePool.create_node(
         bot=bot,
-        host='54.38.198.24',
-        port='88',
-        password='stonemusicgay',
+        host='lavalink1.oryzen.xyz',
+        port='1481',
+        password='discord.gg/6xpF6YqVDd',
         # https=True
     )
-    
+
+   
 @bot.event
 async def on_wavelink_node_ready(node: wavelink.Node):
     print(f"[SYSTEM] Node {node.identifier} is ready")
